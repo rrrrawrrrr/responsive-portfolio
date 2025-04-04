@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet" >
+
+
+</head>
+<body>
+    <header>
+    <a href="#" class="logo">アグネス</a>
+    <div class="nav-container">
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button onclick="toggleBW()" class="bw-toggle-btn">B&W Mode</button>
+    </div>
+</header>
+
+
+    <section class="parallax-home" id="home">
+        <img src="Images/1.png" alt="" id="">
+        <img src="Images/moon.png" alt="" id="moon">
+        <img src="Images/17.png" alt="" id="mount">
+        <img src="Images/16.png" alt="" id="mountt">
+        <img src="Images/lamby.png" alt="" id="lamby">
+        <img src="Images/15.png" alt="" id="">
+        <img src="Images/5.png" alt="" id="homeleft">
+        <img src="Images/6.png" alt="" id="homeryt">
+    </section>
+
+    <section class="section-content" id="home">
+        <div class="padding-global">
+            <div class="container align-center">
+                <h1 class="heading-content-h1">Agnes Sherlyn Napoles</h1>
+                <h2 class="heading-content-h2">web developer<br/>Digital Artist</h2>
+                <p class="text-size-medium">
+                    "Artist with a heart"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="skills" id="skills">
+        <div class="w-layout-grid grid-2col gap-large">
+            <div class="container">
+                <h3 class="heading-medium">Skills</h3>
+                <div class="container-wrap">
+                    <div class="tag">art direction</div>
+                    <div class="tag">ui</div>
+                    <div class="tag">ux</div>
+                    <div class="tag">webdesign</div>
+                    <div class="tag">prototyping</div>
+                    <div class="tag">brand identity</div>
+                    <div class="tag">display</div>
+                    <div class="tag">crm</div>
+                    <div class="tag">2d animations</div>
+                    <div class="tag">print</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3 class="heading-medium">Tools</h3>
+                <div class="container-wrap logos">
+                    <i class="devicon-html5-plain" title="HTML5"></i>
+                    <i class="devicon-css3-plain" title="CSS3"></i>
+                    <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="devicon-react-original" title="React"></i>
+                    <i class="devicon-vuejs-plain" title="Vue.js"></i>
+                    <i class="devicon-nodejs-plain" title="Node.js"></i>
+                    <i class="devicon-python-plain" title="Python"></i>
+                    <i class="devicon-sqldeveloper-plain" title="SQL"></i>
+                    <i class="devicon-figma-plain" title="Prototyping"></i>
+                    <i class="devicon-git-plain" title="GitHub/GitLab"></i>
+                    <i class="devicon-postman-plain" title="API Services"></i>
+                  </div>
+            </div>
+        </div>
+        <img src="Images/water.png" alt="">
+        <img src="Images/man.png" alt="" id="man">
+        <img src="Images/grass.png" alt="">
+    </div>
+      
+      
+    <section class="projects" id="projects">
+        <h3>Projects</h3>
+        <div class="project-card">
+            <div class="card">
+                <img src="Images/Salmon.png" alt="">
+                <div class="info">
+                    <div class="price-name">
+                        <h3>Salmon</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/Tuna.png" alt="">
+                <div class="info">
+                    <div class="price-name">
+                        <h3>Tuna</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/Swordfish.png" alt="">
+                <div class="info">
+                    <div class="price-name">
+                        <h3>Swordfish</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Images/Snapper.png" alt="">
+                <div class="info">
+                    <div class="price-name">
+                        <h3>Snapper</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <h2>Let's Connect</h2>
+        <p>Got a project in mind? I'd love to hear from you.</p>
+        <form class="contact-form" action="mailto:aanapoles@up.edu.ph" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn contact-btn">Send Message</button>
+        </form>
+        <div class="social-icons">
+          <a href="#" class="icon-link"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="icon-link"><i class='bx bxl-behance'></i></a>
+          <a href="#" class="icon-link"><i class='bx bxl-dribbble'></i></a>
+          <a href="#" class="icon-link"><i class='bx bxl-facebook'></i></a>
+        </div>
+        <p class="credit">Agnes Napoles — www.agnesnapoles.com</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
